@@ -1,6 +1,4 @@
-import imga from "../assets/works/1 (1).jpg";
-import imgb from "../assets/works/6.jpg";
-import imgc from "../assets/works/8.jpg";
+import { photos } from "../assets/data/data";
 
 export default function Gallery() {
   return (
@@ -19,60 +17,17 @@ export default function Gallery() {
         </ul>
       </div>
       <div className="gallery-grid">
-        <div>
-          <img src={imga} alt="-" className="i-fit" />
-          <div className="gallery-desc">
-            <div>
-              <span className="header-main">People</span> <br />
-              <span className="sub-header">girl stairing</span>
+        {photos.map((photo) => (
+          <div>
+            <img src={photo.img} alt="-" className="i-fit" />
+            <div className="gallery-desc">
+              <div>
+                <span className="header-main">{photo.category}</span> <br />
+                <span className="sub-header">{photo.title}</span>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-          <img src={imgb} alt="-" className="i-fit" />
-          <div className="gallery-desc">
-            <div>
-              <span className="header-main">People</span> <br />
-              <span className="sub-header">girl stairing</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <img src={imgc} alt="-" className="i-fit" />
-          <div className="gallery-desc">
-            <div>
-              <span className="header-main">People</span> <br />
-              <span className="sub-header">girl stairing</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <img src={imga} alt="-" className="i-fit" />
-          <div className="gallery-desc">
-            <div>
-              <span className="header-main">People</span> <br />
-              <span className="sub-header">girl stairing</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <img src={imgb} alt="-" className="i-fit" />
-          <div className="gallery-desc">
-            <div>
-              <span className="header-main">People</span> <br />
-              <span className="sub-header">girl stairing</span>
-            </div>
-          </div>
-        </div>
-        <div>
-          <img src={imgc} alt="-" className="i-fit" />
-          <div className="gallery-desc">
-            <div>
-              <span className="header-main">People</span> <br />
-              <span className="sub-header">girl stairing</span>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
       <section className="overlay"></section>
     </div>
