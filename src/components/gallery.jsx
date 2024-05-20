@@ -4,7 +4,7 @@ import imgc from "../assets/works/8.jpg";
 
 export default function Gallery() {
   return (
-    <div className="gallery-cont">
+    <div className="gallery-cont" id="gallery">
       <div className="gallery-nav">
         <ul>
           <div className="corner-style top-left"></div>

@@ -1,4 +1,8 @@
 export default function Need() {
+    const handelScroll = () => {
+        let m = document.getElementById("contact");
+        m.scrollIntoView({ behavior: "smooth" }, true);
+    }
   return (
     <div className="session-cont">
       <div>
@@ -7,7 +11,7 @@ export default function Need() {
         photography, or <br /> just getting some practice – being able to hold an
         effective photoshoot <br /> can be a handy skill to have. <br />
 
-        <button className="custom-btn">
+        <button className="custom-btn" onClick={handelScroll}>
             book a session
         </button>
       </div>

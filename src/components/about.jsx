@@ -2,7 +2,7 @@ import fb from '../assets/icon/facebook.svg';
 import ig from '../assets/icon/ig.svg';
 export default function About() {
   return (
-    <div className="about-cont">
+    <div className="about-cont" id='about'>
       <div>
         <p className="header-para">
           <strong>Krimin Tuladhar</strong> IS A <br /> THEORETICAL PHYSICIST <br /> WHO DEVELOPED

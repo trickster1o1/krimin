@@ -3,7 +3,7 @@ import ig from "../assets/icon/ig.svg";
 
 export default function Contact() {
   return (
-    <div className="contact-cont">
+    <div className="contact-cont" id="contact">
       <h4>REQUEST A QUOTE OR SAY HI !</h4>
       <span>
         Need some additional information ? Feel free to Get in touch with me for{" "}

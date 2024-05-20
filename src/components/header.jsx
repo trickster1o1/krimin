@@ -1,13 +1,17 @@
 export default function Header() {
+    const handelScroll = (sTo) => {
+        let m = document.getElementById(sTo);
+        m.scrollIntoView({ behavior: "smooth" }, true);
+    }
     return (
         <nav>
             <div>LOGO</div>
             <ul>
-                <li>home</li>
-                <li>about</li>
+                <li onClick={()=>handelScroll('hero')}>home</li>
+                <li onClick={()=>handelScroll('about')}>about</li>
                 <li>package</li>
-                <li>gallery</li>
-                <li>contact</li>
+                <li onClick={()=>handelScroll('gallery')}>gallery</li>
+                <li onClick={()=>handelScroll('contact')}>contact</li>
             </ul>
         </nav>
     );

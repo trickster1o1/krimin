@@ -1,6 +1,6 @@
 export default function Hero() {
     return (
-        <div className="hero-cont">
+        <div className="hero-cont" id="hero">
             <div>
                 <span>Krimin Tuladhar</span> <br />
                 <span>Photographer</span>

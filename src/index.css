@@ -41,6 +41,7 @@ nav {
   align-items: center;
   gap: 2em;
 } nav ul li {
+  user-select: none;
   padding: 0;
   text-transform: uppercase;
   cursor: pointer;

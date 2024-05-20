@@ -1,5 +1,3 @@
-import imgA from "./assets/img/1.jpg";
-import imgB from "./assets/img/2.jpg";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Gallery from "./components/gallery";
