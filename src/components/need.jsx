@@ -11,7 +11,7 @@ export default function Need() {
         photography, or <br /> just getting some practice – being able to hold an
         effective photoshoot <br /> can be a handy skill to have. <br />
 
-        <button className="custom-btn" onClick={handelScroll}>
+        <button className="custom-btn" onClick={handelScroll} id="gallery">
             book a session
         </button>
       </div>

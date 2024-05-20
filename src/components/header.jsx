@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import logo from "../assets/logo.png";
 
 export default function Header() {
   gsap.registerPlugin(ScrollTrigger);
@@ -16,14 +17,14 @@ export default function Header() {
 
       tm.to(".custom-nav", {
         duration: 0,
-        top: '-5em',
-        backgroundColor: '#1b1b1b',
+        top: "-5em",
+        backgroundColor: "#1b1b1b",
       }).to(".custom-nav", {
-        duration: .5,
-        position: 'fixed',
-        top:0,
-        ease: 'power2.inOut'
-      })
+        duration: 0.5,
+        position: "fixed",
+        top: 0,
+        ease: "power2.inOut",
+      });
     });
 
     return () => ctx.revert();
@@ -34,11 +35,13 @@ export default function Header() {
   };
   return (
     <nav className="custom-nav">
-      <div>LOGO</div>
+      <div onClick={() => handelScroll("hero")}>
+        <img src={logo} alt="DUKU CREATION" />
+      </div>
+      <span className="material-symbols-outlined b-menu">menu</span>
       <ul>
         <li onClick={() => handelScroll("hero")}>home</li>
         <li onClick={() => handelScroll("about")}>about</li>
-        <li>package</li>
         <li onClick={() => handelScroll("gallery")}>gallery</li>
         <li onClick={() => handelScroll("contact")}>contact</li>
       </ul>
