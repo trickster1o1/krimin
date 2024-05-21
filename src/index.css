@@ -35,6 +35,40 @@ nav {
   right: 0;
   z-index: 10;
   /* transition: all .2s ease-in-out; */
+}.mobile-nav {
+  position: fixed;
+  color: white;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(154, 123, 123, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(0);
+  -webkit-backdrop-filter: blur(8.3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease-in-out;
+}.mobile-nav span {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+} .mobile-nav ul {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  list-style-type: none;
+} .mobile-nav li {
+  margin-bottom: 1.5em;
+  opacity: 0;
+  transition: all .8s ease-in-out;
+} .active-mob-nav li {
+  opacity: 1;
 } .b-menu {
   display: none;
 } nav img {
@@ -294,10 +328,8 @@ nav {
   position: fixed;
   z-index: -1;
   width: 100%;
-  /* background-color: #1b1b1b; */
   background: rgba(154, 123, 123, 0.08);
   border-radius: 16px;
-  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
   backdrop-filter: blur(8.3px);
   -webkit-backdrop-filter: blur(8.3px);
   height: 100vh;
@@ -384,13 +416,44 @@ nav {
 }
 @media only screen and (max-width: 980px) {
   .gallery-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
+  }.i-fit {
+    height: 35em;
   }
+}
+@media only screen and (max-width: 815px) {
+  .session-cont > div h4 {
+    font-size: 1.2625rem;
+    font-weight: 500;
+  } .session-cont > div {
+    font-size: .9rem;
+    font-weight: 400;
+    padding: 2em;
+  } 
+    .custom-btn {
+      border: 2px solid white;
+      font-weight: 500;
+    }.about-cont > div p {
+      text-align: center;
+      padding-left: 2em;
+      padding-right: 2em;
+      font-size: .9rem;
+    } .about-cont > div p.header-para {
+      font-size: 1.2625rem;
+    }.about-cont > div p ul {
+      justify-content: center;
+    }.hero-cont span:nth-child(1) {
+      font-size: 1.2625rem;
+    }.hero-cont span:nth-child(2) {
+      font-size: .9rem;
+    }
 }
 @media only screen and (max-width: 650px) {
   .b-menu{
     display: block;
   } nav ul {
     display: none;
+  }.about-cont {
+    background-position-x: 50%;
   }
 }

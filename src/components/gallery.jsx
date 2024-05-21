@@ -67,7 +67,7 @@ export default function Gallery() {
       </div>
       <section className="overlay"></section>
       <div className={!display ? "display" : "display display-active"}>
-        <span class="material-symbols-outlined" onClick={() => setDisplay(null)}>close</span>
+        <span className="material-symbols-outlined" onClick={() => setDisplay(null)}>close</span>
         {selected ? <img src={selected.img} alt="-" /> : "loading..."}
       </div>
     </div>
