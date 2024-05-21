@@ -7,28 +7,28 @@ import imgf from "../../assets/works/f.jpg";
 
 export const photos = [
     {
-        title: 'girl stairing',
+        title: 'lakhe',
         category: 'god',
         img: imga
     },{
-        title: 'girl stairing',
+        title: 'Indra Jatra',
         category: 'festival',
         img: imgb
     },{
-        title: 'girl stairing',
-        category: 'people',
+        title: 'Kumari',
+        category: 'god',
         img: imgc
     },{
-        title: 'girl stairing',
-        category: 'festival',
+        title: 'Festival',
+        category: 'holi',
         img: imge
     },{
-        title: 'girl stairing',
+        title: 'girl gossip',
         category: 'people',
         img: imgf
     },{
         title: 'girl stairing',
-        category: 'god',
+        category: 'dancing god',
         img: imgd
     },
 ]
