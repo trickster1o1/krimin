@@ -5,18 +5,18 @@ import { useEffect } from "react";
 export default function About() {
   useEffect(() => {
     let ctx = gsap.context(() => {
-      if (window.innerWidth > 815) {
-        gsap.to(".about-cont", {
-          scrollTrigger: {
-            trigger: ".about-cont",
-            start: "top 0",
-            end: "bottom 100%",
-            toggleActions: "restart none reverse none",
-          },
-          duration: 0,
-          backgroundAttachment: "fixed",
-        });
-      }
+      // if (window.innerWidth > 815) {
+      //   gsap.to(".about-cont", {
+      //     scrollTrigger: {
+      //       trigger: ".about-cont",
+      //       start: "top 0",
+      //       end: "bottom 100%",
+      //       toggleActions: "restart none reverse none",
+      //     },
+      //     duration: 0,
+      //     backgroundAttachment: "fixed",
+      //   });
+      // }
 
       gsap.from(".about-ani", {
         scrollTrigger: {
