@@ -19,16 +19,16 @@ export const photos = [
         category: 'god',
         img: imgc
     },{
-        title: 'Festival',
-        category: 'holi',
+        title: 'holi',
+        category: 'festival',
         img: imge
     },{
         title: 'girl gossip',
         category: 'people',
         img: imgf
     },{
-        title: 'girl stairing',
-        category: 'dancing god',
+        title: 'dancing god',
+        category: 'god',
         img: imgd
     },
 ]

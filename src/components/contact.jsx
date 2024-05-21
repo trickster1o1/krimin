@@ -33,8 +33,8 @@ export default function Contact() {
       </section>
       <div className="contact-info contact-ani">
         <span>CONTACT INFO</span>
-        <strong>E</strong> : contact@email.me <br />
-        <strong>P</strong> : +977 9810116104 <br />
+        <strong>E</strong> : <a href="mailto:nischaltuladhar15@gmail.com" target="_blank" rel="noopener noreferrer">contact@email.me</a> <br />
+        <strong>P</strong> : <a href="tel:+9779808158535" target="_blank" rel="noopener noreferrer">+977 9808158535</a> <br />
         <strong>A</strong> : Tridevi Sadak, Thamel, Kathmandu
       </div>
       <div className="contact-media contact-ani">
