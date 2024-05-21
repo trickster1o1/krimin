@@ -24,7 +24,6 @@ body::-webkit-scrollbar-thumb {
   transition: all .5s ease-in-out;
 
 }
-
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
   background: rgba(98,148,185,.5);
@@ -285,6 +284,7 @@ nav {
   letter-spacing: 1px;
   cursor: pointer;
   font-weight: 700;
+  opacity: 1;
   transition: all .25s ease-in-out;
 } .custom-btn:hover {
   background-color: white;

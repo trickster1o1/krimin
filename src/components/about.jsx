@@ -15,6 +15,18 @@ export default function About() {
         duration: 0,
         backgroundAttachment: "fixed",
       });
+
+      gsap.from(".about-ani", {
+        scrollTrigger: {
+          trigger: '.about-cont',
+          start: 'top 50%'
+        },
+        y: 25,
+        opacity: 0,
+        stagger: .25,
+        duration: .5,
+        ease: "power2.inOut",
+      });
     });
 
     return () => ctx.revert();
@@ -22,27 +34,20 @@ export default function About() {
   return (
     <div className="about-cont" id="about">
       <div>
-        <p className="header-para">
+        <p className="header-para about-ani">
           <strong>Krimin Tuladhar</strong> IS A <br />
-          {/* THEORETICAL PHYSICIST{" "}
-          <br /> WHO DEVELOPED THE <br /> GENERAL THEORY OF <br /> RELATIVITY */}
           Passionate and creative freelance
           <br /> photographer with a keen eye for <br />
           capturing compelling moments <br /> and telling visual stories.
-          {/* Passionate and creative freelance photographer with a keen eye for
-          capturing compelling moments and telling visual stories. Specializing
-          in [portrait, landscape, event, or
-          product photography], I bring a unique blend of artistic vision and
-          technical expertise to every project */}
         </p>
-        <p>
+        <p className="about-ani">
           <h4>Experience</h4>
           With 5 years of experience, I am dedicated to providing high-quality,<br /> professionally edited images that exceed client expectations. <br />
           Specializing in [portrait, landscape, event, or product photography]{" "}
           <br /> I bring a unique blend of artistic vision and technical
           expertise to  <br />every project.Available for collaborations, event coverage, and <br /> personalized photo shoots. 
         </p>
-        <p>
+        <p className="about-ani">
           <h4>HIT ME ON SOCIAL</h4>
           <ul>
             <li>

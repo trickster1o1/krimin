@@ -11,23 +11,35 @@ export default function Hero() {
         .to(".inner-lense", {
           duration: 0.5,
           transform: "scale(.8)",
+          ease: "power2.inOut",
         })
         .to(".inner-lense", {
           duration: 0.5,
           transform: "scale(1.5)",
+          ease: "power2.inOut",
         })
         .to(".flash", {
           duration: 0.5,
           width: "2em",
           height: "2em",
+          ease: "power2.inOut",
         })
         .to(".flash", {
           duration: 0.2,
           width: "200vw",
           height: "200vh",
+          ease: "power2.inOut",
         })
         .to(".splash", {
+          duration: 0.5,
           opacity: "0",
+          ease: "power2.inOut",
+        })
+        .from(".focus-style", {
+          // delay: -2,
+          duration: 0.5,
+          transform: "scale(.7)",
+          ease: "power2.inOut",
         })
         .to("body", {
           duration: 0,
@@ -43,7 +55,7 @@ export default function Hero() {
   return (
     <>
       <div className="hero-cont" id="hero">
-        <div>
+        <div className="focus-style">
           <span>Krimin Tuladhar</span> <br />
           <span>Photographer</span>
           <div className="corner-style top-left"></div>
