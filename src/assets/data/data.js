@@ -1,6 +1,6 @@
 import imga from "../../assets/works/a.jpg";
 import imgb from "../../assets/works/b.jpg";
-import imgc from "../../assets/works/c.jpg";
+import imgc from "../../assets/works/c.1.jpg";
 import imgd from "../../assets/works/d.jpg";
 import imge from "../../assets/works/e.jpg";
 import imgf from "../../assets/works/f.jpg";

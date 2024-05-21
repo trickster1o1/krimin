@@ -8,7 +8,27 @@ body {
 } body,html {
   width: 100%;
 }
+/* width */
+body::-webkit-scrollbar {
+  width: 5px;
+}
 
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #1b1b1b;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  transition: all .5s ease-in-out;
+
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(98,148,185,.5);
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -491,5 +511,8 @@ nav {
     display: none;
   }.about-cont {
     background-position-x: 50%;
+  }.display > img {
+    width: 80%;
+    height: auto;
   }
 }
