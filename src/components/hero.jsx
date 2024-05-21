@@ -9,17 +9,17 @@ export default function Hero() {
         overflow: "hidden",
       })
         .to(".inner-lense", {
-          duration: 0.5,
+          duration: 1,
           transform: "scale(.8)",
           ease: "power2.inOut",
         })
         .to(".inner-lense", {
-          duration: 0.5,
+          duration: 1,
           transform: "scale(1.5)",
           ease: "power2.inOut",
         })
         .to(".flash", {
-          duration: 0.5,
+          duration: 1,
           width: "2em",
           height: "2em",
           ease: "power2.inOut",
