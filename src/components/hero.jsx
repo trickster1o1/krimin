@@ -26,11 +26,15 @@ export default function Hero() {
         })
         .to(".flash", {
           duration: 0.2,
-          width: "200vw",
-          height: "200vh",
+          width: "10em",
+          height: "10em",
           ease: "power2.inOut",
-        })
-        .to(".splash", {
+        }).to('.splash', {
+          backgroundColor: 'rgba(255,255,255,.9)',
+          duration: .1,
+          delay: -.1,
+          ease: "power2.inOut"
+        }).to(".splash", {
           duration: 0.5,
           opacity: "0",
           ease: "power2.inOut",
