@@ -13,8 +13,8 @@ export default function Contact() {
       <div className="contact-info">
         <span>CONTACT INFO</span>
         <strong>E</strong> : contact@email.me <br />
-        <strong>P</strong> : (513) 352-3209s <br />
-        <strong>A</strong> : Edwards Cincinnati, OH 45209 USA
+        <strong>P</strong> : +977 9810116104 <br />
+        <strong>A</strong> : Tridevi Sadak, Thamel, Kathmandu
       </div>
       <div className="contact-media">
         hit me on social media

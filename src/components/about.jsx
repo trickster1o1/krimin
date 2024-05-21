@@ -9,7 +9,7 @@ export default function About() {
         scrollTrigger: {
           trigger: ".about-cont",
           start: "top 0",
-          end: 'bottom 100%',
+          end: "bottom 100%",
           toggleActions: "restart none reverse none",
         },
         duration: 0,
@@ -23,15 +23,24 @@ export default function About() {
     <div className="about-cont" id="about">
       <div>
         <p className="header-para">
-          <strong>Krimin Tuladhar</strong> IS A <br /> THEORETICAL PHYSICIST{" "}
-          <br /> WHO DEVELOPED THE <br /> GENERAL THEORY OF <br /> RELATIVITY
+          <strong>Krimin Tuladhar</strong> IS A <br />
+          {/* THEORETICAL PHYSICIST{" "}
+          <br /> WHO DEVELOPED THE <br /> GENERAL THEORY OF <br /> RELATIVITY */}
+          Passionate and creative freelance
+          <br /> photographer with a keen eye for <br />
+          capturing compelling moments <br /> and telling visual stories.
+          {/* Passionate and creative freelance photographer with a keen eye for
+          capturing compelling moments and telling visual stories. Specializing
+          in [portrait, landscape, event, or
+          product photography], I bring a unique blend of artistic vision and
+          technical expertise to every project */}
         </p>
         <p>
           <h4>Experience</h4>
-          Praesent commodo cursus magna, vel scelerisque nisl <br /> consectetur
-          et. Aenean lacinia bibendum nulla sed <br /> consectetur. Lorem ipsum
-          dolor sit amet, consectetur <br /> adipiscing elit aenean lacinia
-          bibendum.
+          With 5 years of experience, I am dedicated to providing high-quality,<br /> professionally edited images that exceed client expectations. <br />
+          Specializing in [portrait, landscape, event, or product photography]{" "}
+          <br /> I bring a unique blend of artistic vision and technical
+          expertise to  <br />every project.Available for collaborations, event coverage, and <br /> personalized photo shoots. 
         </p>
         <p>
           <h4>HIT ME ON SOCIAL</h4>
