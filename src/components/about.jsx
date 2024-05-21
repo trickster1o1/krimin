@@ -5,26 +5,28 @@ import { useEffect } from "react";
 export default function About() {
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.to(".about-cont", {
-        scrollTrigger: {
-          trigger: ".about-cont",
-          start: "top 0",
-          end: "bottom 100%",
-          toggleActions: "restart none reverse none",
-        },
-        duration: 0,
-        backgroundAttachment: "fixed",
-      });
+      if (window.innerWidth > 815) {
+        gsap.to(".about-cont", {
+          scrollTrigger: {
+            trigger: ".about-cont",
+            start: "top 0",
+            end: "bottom 100%",
+            toggleActions: "restart none reverse none",
+          },
+          duration: 0,
+          backgroundAttachment: "fixed",
+        });
+      }
 
       gsap.from(".about-ani", {
         scrollTrigger: {
-          trigger: '.about-cont',
-          start: 'top 50%'
+          trigger: ".about-cont",
+          start: "top 50%",
         },
         y: 25,
         opacity: 0,
-        stagger: .25,
-        duration: .5,
+        stagger: 0.25,
+        duration: 0.5,
         ease: "power2.inOut",
       });
     });
@@ -42,10 +44,14 @@ export default function About() {
         </p>
         <p className="about-ani">
           <h4>Experience</h4>
-          With 5 years of experience, I am dedicated to providing high-quality,<br /> professionally edited images that exceed client expectations. <br />
+          With 5 years of experience, I am dedicated to providing high-quality,
+          <br /> professionally edited images that exceed client expectations.{" "}
+          <br />
           Specializing in [portrait, landscape, event, or product photography]{" "}
           <br /> I bring a unique blend of artistic vision and technical
-          expertise to  <br />every project.Available for collaborations, event coverage, and <br /> personalized photo shoots. 
+          expertise to <br />
+          every project.Available for collaborations, event coverage, and <br />{" "}
+          personalized photo shoots.
         </p>
         <p className="about-ani">
           <h4>HIT ME ON SOCIAL</h4>
