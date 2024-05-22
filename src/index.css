@@ -53,6 +53,7 @@ code {
   justify-content: center;
   align-items: center;
 } .splash > div {
+  position: relative;
   width: 5em;
   height: 5em;
   border: 1px solid #1f1f1f;
@@ -61,6 +62,32 @@ code {
   justify-content: center;
   align-items: center;
   background-color: #131313;
+  animation: lenseFocus 5s infinite alternate-reverse;
+
+}.lense::before{
+  border: .2px solid rgba(255,255,255,.35);
+  width:.2px;
+  content: '';
+  position: absolute;
+  left: 0;
+}.lense::after{
+  border: .2px solid rgba(255,255,255,.35);
+  width:.2px;
+  content: '';
+  position: absolute;
+  right: 0;
+} @keyframes lenseFocus {
+  0% {
+    transform: rotate(0deg);
+  } 25% {
+    transform: rotate(45deg);
+  } 50% {
+    transform: rotate(-45deg);
+  } 75% {
+    transform: rotate(90deg);
+  } 100% {
+    transform: rotate(-90deg);
+  }
 } .splash > div > .inner-lense {
   width: 3em;
   height: 3em;
