@@ -45,8 +45,8 @@ export default function Gallery() {
         </ul>
       </div>
       <div className="gallery-grid">
-        {photos.map((photo) => (
-          <div>
+        {photos.map((photo, index) => (
+          <div key={index}>
             <img src={photo.img} alt="-" className="i-fit" />
             <div
               className="gallery-desc"
