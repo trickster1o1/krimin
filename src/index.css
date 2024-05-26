@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 } body,html {
   width: 100%;
 }
@@ -550,5 +551,15 @@ nav {
   }.display > img {
     width: 80%;
     height: auto;
+  }nav img {
+    cursor: default;
+  }.custom-btn {
+    cursor: default;
+  }.gallery-cont .gallery-nav ul li {
+    cursor: default;
+  }.gallery-desc {
+    cursor: default;
+  } .display > span {
+    cursor: default;
   }
 }

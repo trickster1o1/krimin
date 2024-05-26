@@ -11,11 +11,7 @@ export default function Hero() {
       if (imagesLoaded === totalImages) {
         let ctx = gsap.context(() => {
           let tm = gsap.timeline();
-          tm.to("body", {
-            duration: 0,
-            overflow: "hidden",
-          })
-            .to(".inner-lense", {
+          tm.to(".inner-lense", {
               duration: 1,
               transform: "scale(.8)",
               ease: "power2.inOut",
